@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 14 Feb 2024 14:59:25 GMT</lastBuildDate><item><title><![CDATA[[AWS] Public IP 과금 소식]]></title><description><![CDATA[안녕하세요!👋🏻 지금까지 AWS의 EC2에 Attach되어 있는 IP 주소에 대해서는 과금하지 않았는데, 2024년 2월 1일부터 AWS Public IPv4 주소 사용이 시간당 0.005 USD 과금됩니다. 또한, 신규 AWS…]]></description><link>https://tech.erasegod.com/cost2/</link><guid isPermaLink="false">https://tech.erasegod.com/cost2/</guid><pubDate>Tue, 13 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 15 Feb 2024 14:55:35 GMT</lastBuildDate><item><title><![CDATA[[AWS] Public IP 과금 소식]]></title><description><![CDATA[안녕하세요!👋🏻 지금까지 AWS의 EC2에 Attach되어 있는 IP 주소에 대해서는 과금하지 않았는데, 2024년 2월 1일부터 AWS Public IPv4 주소 사용이 시간당 0.005 USD 과금됩니다. 또한, 신규 AWS…]]></description><link>https://tech.erasegod.com/cost2/</link><guid isPermaLink="false">https://tech.erasegod.com/cost2/</guid><pubDate>Tue, 13 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
 &lt;p&gt;지금까지 AWS의 EC2에 Attach되어 있는 IP 주소에 대해서는 과금하지 않았는데, &lt;strong&gt;2024년 2월 1일&lt;/strong&gt;부터 AWS Public IPv4 주소 사용이 시간당 0.005 USD 과금됩니다.&lt;/p&gt;
 &lt;p&gt;또한, 신규 AWS 프리티어 고객인 경우 매달 750시간의 Public IP 주소를 무료로 사용할 수 있습니다. AWS는 Public IP Insights라는 새로운 기능을 통해 고객이 자신의 Public IPv4 주소 사용 현황을 모니터링하고 최적화할 수 있도록 지원합니다. 이를 통해 불필요한 비용을 줄이고 IPv4 주소 사용을 효율적으로 관리할 수 있습니다.&lt;/p&gt;
-&lt;h2&gt;실제 사례&lt;/h2&gt;
+&lt;h2&gt;Public IPv4 주소의 유형&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EC2 Public IPv4&lt;/li&gt;
+&lt;li&gt;Elastic IP&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;서비스 관리형 Public IPv4 : 관리형 서비스를 배포할 때 리소스에 할당하는 Amazon 소유의 Public IPv4 주소&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html#pricing&quot;&gt;https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html#pricing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BYOIP : 사용자 소유의 Public IPv4 주소를 AWS로 가져온 경우 (이 경우만 무료)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;청구서 정보&lt;/h2&gt;
 &lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
     &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
       &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/c5d88a7c3c4db08026bf51ad73c1ffeb/5b5fb/publicIp_cost.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
@@ -25,27 +37,77 @@
 &lt;p&gt;&apos;In-use&apos; Public IPv4 주소는 시간당 $0.005의 비용이 부과되며, 총 5.807시간 동안 사용되어 총 비용은 USD 0.03입니다.&lt;/p&gt;
 &lt;p&gt;그리고 시간이 딱 떨어지지 않는 것으로 보아 Public IPv4 주소의 과금이 시간당이 아니라 분 단위로 이루어진다는 것을 알 수 있습니다.
 이는 AWS가 Public IPv4 주소 사용에 대해 더 세밀한 과금 체계를 적용하고 있음을 의미합니다.&lt;/p&gt;
+&lt;h2&gt;Public IPv4 주소 비용 최적화 방안&lt;/h2&gt;
+&lt;p&gt;AWS는 아래와 같이 비용 최적화 방안을 제시하고 있습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;IPv6 사용&lt;/li&gt;
+&lt;li&gt;Public IPv4 자동 활성화 옵션 비활성화&lt;/li&gt;
+&lt;li&gt;EIC(EC2 Instance Connect)를 통한 리소스 원격 연결&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;1. IPv6 사용&lt;/h3&gt;
+&lt;p&gt;AWS에서는 IPv6 주소에 대한 비용을 부과하지 않습니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IPv6를 지원하는 서비스 항목&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.aws.amazon.com/vpc/latest/userguide/aws-ipv6-support.html&quot;&gt;https://docs.aws.amazon.com/vpc/latest/userguide/aws-ipv6-support.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;2. Public IPv4 자동 활성화 옵션 비활성화&lt;/h3&gt;
+&lt;p&gt;인스턴스를 생성하는 시점에 서브넷 또는 인스턴스에 자동 할당 옵션이 켜져 있을 경우, 리소스에 불필요한 Public IP 할당이 이루어질 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/3a2eae4d1bf4fd9232294d3920e50ec5/adfb5/subnet_ip.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 42.94117647058824%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABbUlEQVR42n2R207CQBCG+8heeGEUUdoSRAzc6MMREWgEC7Klp93tifI7s0A9hNjky8x0Zv+ZnbXa9gta3RFunWe03BE6tgvHcSke4Np5gtvpo0P+TXeItv2Ih/s+XGeEVm8I+24Am85etnu4uLINli8EVsEWfhDAWwt8him2UYxtGEIqhaIskRcFCiIvSmRlgewUV4XJlVVpyLIM1ng8xtt0ivlsjsnkFQt/Bam1EZNSIk3ThqTxJeIkQRTHiOOD5QE4by2XH6Zgv98fqbHb7Qx5nhtb1/UvuE5TUxZNjo1YVEoFK9iGiKLIFHBhVVWNYEaCFfsk8s0hVucE6VbWgiaceR5mcw/e+xIRdVGUSNXB8rW58wFpyHRm7E9B9nmfVrjZQKxWEL4PsV4jEgFS2oemAzy1Uhqals3+CZ6e//0V5Ae0VETLDIQhJWKxgabkjrr99/E6zgvStczr8Ys20E6kRk4FxRkq4u8OT4JfAl+cDQ0RrhwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;공용 IPv4 주소 자동 할당을 끄는 위치&apos; title=&apos;&apos; src=&apos;/static/3a2eae4d1bf4fd9232294d3920e50ec5/ca1dc/subnet_ip.png&apos; srcset=&apos;/static/3a2eae4d1bf4fd9232294d3920e50ec5/e7570/subnet_ip.png 170w,
+/static/3a2eae4d1bf4fd9232294d3920e50ec5/f46e7/subnet_ip.png 340w,
+/static/3a2eae4d1bf4fd9232294d3920e50ec5/ca1dc/subnet_ip.png 680w,
+/static/3a2eae4d1bf4fd9232294d3920e50ec5/02d09/subnet_ip.png 1020w,
+/static/3a2eae4d1bf4fd9232294d3920e50ec5/9d567/subnet_ip.png 1360w,
+/static/3a2eae4d1bf4fd9232294d3920e50ec5/adfb5/subnet_ip.png 3422w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;공용 IPv4 주소 자동 할당을 끄는 위치&lt;/figcaption&gt;
+  &lt;/figure&gt;
+따라서, 위 그림에 표시된 것처럼 기본 서브넷에서 공용 IPv4 주소 자동 할당을 비활성화하는 것이 좋습니다. 예를 들어 Amazon ECS 배포 또는 RDS 데이터베이스를 호스팅하는 서브넷에는 퍼블릭 IPv4 주소가 필요하지 않을 수
+있습니다.&lt;/p&gt;
+&lt;h3&gt;3. EIC를 통한 리소스 원격 연결&lt;/h3&gt;
+&lt;p&gt;기존에는 VPC 내의 리소스에 원격으로 액세스하려면 Bastion Host에 Elastic IP를 할당하는 방식을 이용하고 있습니다.&lt;/p&gt;
+&lt;p&gt;이제는 &lt;a href=&quot;https://aws.amazon.com/ko/blogs/compute/secure-connectivity-from-public-to-private-introducing-ec2-instance-connect-endpoint-june-13-2023/&quot;&gt;EIC&lt;/a&gt;를 사용하여 IPv4에 대해서 비용을 절감하는 것을 권장드립니다.&lt;/p&gt;
+&lt;p&gt;EIC를 사용하게 되면 이점은 아래와 같습니다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Public IPv4 주소 비할당&lt;/li&gt;
+&lt;li&gt;IGW나 NAT 게이트웨이없이 접근 가능&lt;/li&gt;
+&lt;li&gt;에이전트 설치 불필요&lt;/li&gt;
+&lt;li&gt;IAM 및 보안그룹을 통한 액세스 제어&lt;/li&gt;
+&lt;li&gt;콘솔에서 연결 가능&lt;/li&gt;
+&lt;li&gt;사용에 따른 추가 비용 없음&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Public IP 에 대해 추적하고 편리하게 관리하기 위한 명령어&lt;/h2&gt;
-&lt;p&gt;public IP에 대해 좀 더 쉽게(?) 관리할 수 있는 명령어들을 공유드립니다.&lt;/p&gt;
+&lt;p&gt;사실 AWS에서 제공하는 Amazon VPC IPAM 퍼블릭 IP Insights로 퍼블릭 IPv4 사용량 모니터링할 수 있지만 public IP에 대해 좀 더 쉽게(?) 관리할 수 있는 명령어들을 공유드립니다.&lt;/p&gt;
 &lt;p&gt;명령어는 아래의 목적을 차례대로 갖고 있습니다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;VPC 내에서 사용되지 않고 있는(즉, 어떤 인스턴스에도 연결되지 않은) Elastic IP 주소를 조회&lt;/li&gt;
-&lt;li&gt;네트워크 인터페이스의 정보를 조회하여 공용 IP 주소가 연결된 인터페이스를 필터링&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;네트워크 인터페이스의 정보를 조회하여 공용 IP 주소가 연결된 인터페이스를 필터링&lt;/p&gt;
+&lt;p&gt;2.1. 서비스 관리형 퍼블릭 IPv4 또한 포함합니다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;AWS Global Accelerator와 연결된 퍼블릭 IPv4 주소 추적&lt;/li&gt;
+&lt;li&gt;AWS Site-to-Site VPN 연결과 연결된 퍼블릭 IPv4 주소 추적&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;window&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# VPC 내에서 사용되지 않고 있는(즉, 어떤 인스턴스에도 연결되지 않은) Elastic IP 주소를 조회&lt;/span&gt;
-aws ec2 describe-addresses &lt;span class=&quot;token parameter variable&quot;&gt;--region&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;리전정보&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--filters&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Name=domain,Values=vpc&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; ConvertFrom-Json &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; ForEach-Object &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; $.Addresses &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; Where-Object &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$null&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-eq&lt;/span&gt; $.AssociationId &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; Select-Object PublicIp, AllocationId, @&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Region&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;Expression&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$_&lt;/span&gt;.NetworkBorderGroup&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, @&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Status&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;Expression&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;미사용&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, NetworkInterfaceId
-
-&lt;span class=&quot;token comment&quot;&gt;# 네트워크 인터페이스의 정보를 조회하여 공용 IP 주소가 연결된 인터페이스를 필터링&lt;/span&gt;
-aws ec2 describe-network-interfaces &lt;span class=&quot;token parameter variable&quot;&gt;--region&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;리전정보&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; ConvertFrom-Json &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; % &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; $.NetworkInterfaces &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; Where-Object &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; $.Association &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; Select-Object @&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;PublicIp&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;Expression&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;$.Association.PublicIp&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, @&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Region&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;Expression&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;$.AvailabilityZone&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, @&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Status&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;Expression&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;if &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;$.Status &lt;span class=&quot;token parameter variable&quot;&gt;-eq&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;in-use&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;사용&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;미사용&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, @&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;AllocationId&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;Expression&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;$.Association.AllocationId&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;, NetworkInterfaceId&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;mac&lt;/h3&gt;
-&lt;p&gt;사전 준비 : &lt;code class=&quot;language-text&quot;&gt;brew install jq&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;mac 환경&lt;/h4&gt;
+&lt;p&gt;사전 준비 : &lt;code class=&quot;language-text&quot;&gt;brew install jq&lt;/code&gt; 또는 &quot;AWS CLI에서 직접적으로 특정 필드만 추출하는 기능을 제공하는 &lt;code class=&quot;language-text&quot;&gt;--query&lt;/code&gt; 옵션을 사용해도 무방합니다.&quot;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# VPC 내에서 사용되지 않고 있는(즉, 어떤 인스턴스에도 연결되지 않은) Elastic IP 주소를 조회&lt;/span&gt;
 aws ec2 describe-addresses &lt;span class=&quot;token parameter variable&quot;&gt;--region&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;리전정보&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--filters&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Name=domain,Values=vpc&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; jq &lt;span class=&quot;token string&quot;&gt;&apos;.Addresses | map(select(.AssociationId == null)) | .[] | {PublicIp: .PublicIp, AllocationId: .AllocationId, Region: .NetworkBorderGroup, Status: &quot;미사용&quot;, NetworkInterfaceId: .NetworkInterfaceId}&apos;&lt;/span&gt;
 
 
 &lt;span class=&quot;token comment&quot;&gt;# 네트워크 인터페이스의 정보를 조회하여 공용 IP 주소가 연결된 인터페이스를 필터링&lt;/span&gt;
-aws ec2 describe-network-interfaces &lt;span class=&quot;token parameter variable&quot;&gt;--region&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;리전정보&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; jq &lt;span class=&quot;token string&quot;&gt;&apos;.NetworkInterfaces | map(select(.Association != null)) | .[] | {PublicIp: .Association.PublicIp, Region: .AvailabilityZone, Status: if .Status == &quot;in-use&quot; then &quot;사용&quot; else &quot;미사용&quot;, AllocationId: .Association.AllocationId, NetworkInterfaceId: .NetworkInterfaceId}&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+aws ec2 describe-network-interfaces &lt;span class=&quot;token parameter variable&quot;&gt;--region&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;리전정보&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; jq &lt;span class=&quot;token string&quot;&gt;&apos;.NetworkInterfaces | map(select(.Association != null)) | .[] | {PublicIp: .Association.PublicIp, Region: .AvailabilityZone, Status: if .Status == &quot;in-use&quot; then &quot;사용&quot; else &quot;미사용&quot;, AllocationId: .Association.AllocationId, NetworkInterfaceId: .NetworkInterfaceId}&apos;&lt;/span&gt;
+
+
+&lt;span class=&quot;token comment&quot;&gt;# AWS Global Accelerator와 연결된 퍼블릭 IPv4 주소 추적&lt;/span&gt;
+aws globalaccelerator list-accelerators &lt;span class=&quot;token parameter variable&quot;&gt;--region&lt;/span&gt; us-west-2 &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; jq &lt;span class=&quot;token string&quot;&gt;&apos;.Accelerators[].IpSets[].IpAddresses[]&apos;&lt;/span&gt;
+
+
+&lt;span class=&quot;token comment&quot;&gt;# AWS Site-to-Site VPN 연결과 연결된 퍼블릭 IPv4 주소 추적&lt;/span&gt;
+aws ec2 describe-vpn-connections &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; jq &lt;span class=&quot;token string&quot;&gt;&apos;.VpnConnections[].VgwTelemetry[].OutsideIpAddress&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;br/&gt;
 &lt;blockquote&gt;
 &lt;p&gt;참고사이트&lt;/p&gt;
@@ -53,6 +115,7 @@ aws ec2 describe-network-interfaces &lt;span class=&quot;token parameter variabl
 &lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/blogs/korea/new-aws-public-ipv4-address-charge-public-ip-insights/&quot;&gt;Public IP&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/about-aws/whats-new/2024/02/aws-free-tier-750-hours-free-public-ipv4-addresses/&quot;&gt;Public IP 프리티어&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/blogs/networking-and-content-delivery/identify-and-optimize-public-ipv4-address-usage-on-aws/&quot;&gt;Public IP Optimizer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/blogs/compute/secure-connectivity-from-public-to-private-introducing-ec2-instance-connect-endpoint-june-13-2023/&quot;&gt;EIC 모범 사례&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[[AWS] 비용 비교: Lambda vs. EC2]]></title><description><![CDATA[안녕하세요!👋🏻 클라우드 컴퓨팅이 우리 개발 생활에 깊숙이 자리 잡은 요즘, AWS는 마치 필수 요소처럼 여겨지곤 합니다. 서버부터 함수 하나까지, AWS는 우리가 필요로 하는 거의 모든 것을 제공하는데요. 그 중에서도 특히 EC2와 Lambda…]]></description><link>https://tech.erasegod.com/cost1/</link><guid isPermaLink="false">https://tech.erasegod.com/cost1/</guid><pubDate>Fri, 09 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
 &lt;p&gt;클라우드 컴퓨팅이 우리 개발 생활에 깊숙이 자리 잡은 요즘, AWS는 마치 필수 요소처럼 여겨지곤 합니다.&lt;/p&gt;
