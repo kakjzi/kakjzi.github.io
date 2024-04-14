@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Apr 2024 12:10:39 GMT</lastBuildDate><item><title><![CDATA[[AWS] RDS Aurora I/O-Optimized]]></title><description><![CDATA[안녕하세요!👋🏻 AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 'Aurora I/O-Optimized'를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized…]]></description><link>https://tech.erasegod.com/cost3/</link><guid isPermaLink="false">https://tech.erasegod.com/cost3/</guid><pubDate>Sun, 14 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Apr 2024 12:20:14 GMT</lastBuildDate><item><title><![CDATA[[AWS] RDS Aurora I/O-Optimized]]></title><description><![CDATA[안녕하세요!👋🏻 AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 'Aurora I/O-Optimized'를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized…]]></description><link>https://tech.erasegod.com/cost3/</link><guid isPermaLink="false">https://tech.erasegod.com/cost3/</guid><pubDate>Sun, 14 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
 &lt;p&gt;AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 &apos;&lt;a href=&quot;https://aws.amazon.com/ko/about-aws/whats-new/2023/05/amazon-aurora-i-o-optimized/&quot;&gt;Aurora I/O-Optimized&lt;/a&gt;&apos;를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized의 개념을 소개하고, 어떻게 비용 효율을 높일 수 있는지 살펴보겠습니다.&lt;/p&gt;
 &lt;h2&gt;I/O-Optimized 요금제 소개&lt;/h2&gt;
 &lt;p&gt;I/O-Optimized 요금제는 Amazon Aurora 서비스의 한 형태로, 데이터베이스의 입출력(IO) 작업에 최적화되어 비용 효율을 높이는 요금 체계입니다. 이 요금제는 &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt; 집약적인 작업을 자주 수행하는 데이터베이스에 적합하며, &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt;지출이 총 Aurora 데이터베이스 지출의 25%를 초과하는 경우 Aurora I/O-Optimized를 이용하면 &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt; 집약적 워크로드의 비용을 최대 40% 절감할 수 있습니다.&lt;/p&gt;
@@ -95,15 +95,13 @@
 &lt;li&gt;NF 당 단가 계산
 db.rg6.xlarge 는 NF(Nomalized Factor)가 &apos;8&apos;입니다.
 NF가 8일 때, RI 요금은 0.412이니, 1NF 당 0.412/8 = USD 0.0515 입니다.&lt;/li&gt;
-&lt;li&gt;각 요금제별 비용 계산&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Standard&lt;/p&gt;
+&lt;p&gt;각 요금제별 비용 계산&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Standard&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;RI 적용 비용 = 360시간(15일) × USD 0.0515 x 8(NF) = USD 148.32&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I/O Optimized&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I/O Optimized&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;해당 요금의 NF 값은 10.3이므로, RI 1대가 NF 8만큼 커버가 가능한 상태이다. 그래서 10.3 - 8 에 대한 비용은 온디맨드로 과금됩니다.&lt;/li&gt;
 &lt;li&gt;I/O Optimized RI 적용 비용 = 360시간(15일) × USD 0.0515 x 8(NF) = 148.32 USD&lt;/li&gt;
@@ -116,12 +114,14 @@ NF가 8일 때, RI 요금은 0.412이니, 1NF 당 0.412/8 = USD 0.0515 입니다
 한달 내내 I/O Optimized 만 사용한 경우 : USD 428.11
 15일씩 반반 나눠 쓴 경우 : USD 362.38&lt;/li&gt;
 &lt;/ol&gt;
+&lt;blockquote&gt;
 &lt;p&gt;I/O Optimized는 비록 기본 인스턴스 비용은 더 높지만, 특히 I/O 작업이 높은 워크로드에서는 I/O 비용을 과금하지 않기 때문에, 훨씬 경제적인 선택이 될 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;정리&lt;/h2&gt;
 &lt;p&gt;Aurora I/O-Optimized 요금제는 데이터베이스 작업 중 특히 읽기 및 쓰기 I/O 작업이 많은 환경에서 비용 효율을 극대화할 수 있는 좋은 선택지가 될 수 있습니다. 하지만, 이러한 요금제는 기본 인스턴스 비용과 스토리지 비용이 증가한다는 점을 명심해야 합니다.&lt;/p&gt;
 &lt;p&gt;또한, RI를 활용하여 추가적인 비용 절감을 기대할 수 있지만, 이는 사용 패턴과 필요에 따라 철저한 계획과 계산이 필요합니다. RI의 크기 유연성을 활용해 보다 효율적으로 인스턴스를 관리할 수 있으나, I/O Optimized의 경우 NF 값의 변동으로 인한 온디맨드 비용 발생 가능성도 고려해야 합니다.&lt;/p&gt;
 &lt;p&gt;AWS를 이용하시는 모든 분들이 이 글을 통해 좀 더 효율적인 비용 관리 방안을 모색할 수 있기를 바랍니다. 다음 포스팅에서는 또 다른 AWS 서비스의 비용 최적화 전략에 대해 알아보겠습니다. 감사합니다.🚀&lt;/p&gt;
-&lt;p&gt;참고&lt;/p&gt;
+&lt;h4&gt;참고&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/blogs/aws/new-amazon-aurora-i-o-optimized-cluster-configuration-with-up-to-40-cost-savings-for-i-o-intensive-applications/&quot;&gt;https://aws.amazon.com/ko/blogs/aws/new-amazon-aurora-i-o-optimized-cluster-configuration-with-up-to-40-cost-savings-for-i-o-intensive-applications/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithReservedDBInstances.html&quot;&gt;https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithReservedDBInstances.html&lt;/a&gt;&lt;/li&gt;
