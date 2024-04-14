@@ -1,4 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 15 Feb 2024 14:59:36 GMT</lastBuildDate><item><title><![CDATA[[AWS] Public IP 과금 소식]]></title><description><![CDATA[안녕하세요!👋🏻 지금까지 AWS의 EC2에 Attach되어 있는 IP 주소에 대해서는 과금하지 않았는데, 2024년 2월 1일부터 AWS Public IPv4 주소 사용이 시간당 0.005 USD 과금됩니다. 또한, 신규 AWS…]]></description><link>https://tech.erasegod.com/cost2/</link><guid isPermaLink="false">https://tech.erasegod.com/cost2/</guid><pubDate>Tue, 13 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Apr 2024 08:09:46 GMT</lastBuildDate><item><title><![CDATA[[AWS] RDS Aurora I/O-Optimized]]></title><description><![CDATA[안녕하세요!👋🏻 AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 'Aurora I/O-Optimized'를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized…]]></description><link>https://tech.erasegod.com/cost3/</link><guid isPermaLink="false">https://tech.erasegod.com/cost3/</guid><pubDate>Sun, 14 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
+&lt;p&gt;AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 &apos;&lt;a href=&quot;https://aws.amazon.com/ko/about-aws/whats-new/2023/05/amazon-aurora-i-o-optimized/&quot;&gt;Aurora I/O-Optimized&lt;/a&gt;&apos;를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized의 개념을 소개하고, 어떻게 비용 효율을 높일 수 있는지 살펴보겠습니다.&lt;/p&gt;
+&lt;h2&gt;I/O-Optimized 요금제 소개&lt;/h2&gt;
+&lt;p&gt;I/O-Optimized 요금제는 Amazon Aurora 서비스의 한 형태로, 데이터베이스의 입출력(IO) 작업에 최적화되어 비용 효율을 높이는 요금 체계입니다. 이 요금제는 &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt; 집약적인 작업을 자주 수행하는 데이터베이스에 적합하며, &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt;지출이 총 Aurora 데이터베이스 지출의 25%를 초과하는 경우 Aurora I/O-Optimized를 이용하면 &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt; 집약적 워크로드의 비용을 최대 40% 절감할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;Aurora I/O-Optimized는 클러스터 모드를 선택해서 사용할 수 있습니다.
+&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/ec645/image.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 48.23529411764706%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYklEQVR42lVRiW6DMAzl//+tGu20VutaoJQzBwnkIIQEZsIqrU9Ptjnes51E/AXGGA3o+wEolDZvmAIgmTFAShnFx9PhEH98HI+nT4hxfLr+3L6vt6xCtANDRmjXbQUnBJyh4mBgrVVKRUppISVEF+C9n3dAC7MzpC3vLY21L3Hboqqqm6YFY3i5jWatCREcgpObZj/O3vll3bFsBdhEMFJZ1UGOYIKdMMswCDqIpKFZS+6YnyvSitEsq3Kr9hC90mPklwX2eDzyoqxAsMv6XsAMvbEJG695fUmfl+SZ1qSgAphjjpQVWkcwAPx9T7NnUbYII0IRJi0isKKYrHRrWuNz8rxkxTnJT9fk6/bIEaej+xNrrTcZhq07jAmQ8R4ObzCW2fVe4UtWpg1NagLNoai5asS4iWfn5nDK7g3bo5wsmzySBomRW8+A08bOzN00S6Wj132E6zdv3GEDwufpP5TSv/HUNjz510FnAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/ca1dc/image.png&apos; srcset=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/e7570/image.png 170w,
+/static/eea0a9d904c650cfc9a2adf10710ed0e/f46e7/image.png 340w,
+/static/eea0a9d904c650cfc9a2adf10710ed0e/ca1dc/image.png 680w,
+/static/eea0a9d904c650cfc9a2adf10710ed0e/ec645/image.png 933w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/ko/rds/aurora/pricing/&quot;&gt;RDS Aurora 요금제&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;제약사항&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;버전 제한 : Aurora MySQL(3.03.1) 이상, Aurora PostgreSQL v15.2 이상, v14.7 이상, v13.10 이상에서 사용할 수 있습니다.&lt;/li&gt;
+&lt;li&gt;요금제 변경은 30일에 1회 가능&lt;/li&gt;
+&lt;li&gt;요금제는 클러스터에서 적용하며, 하위 모든 인스턴스에 적용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;유의사항&lt;/h2&gt;
+&lt;p&gt;요금제는 특히 입출력(IO) 작업이 높은 데이터베이스 환경에서 비용 효율을 극대화하도록 설계되었지만, 아래 비용 증가도 고려해야 합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;인스턴스 비용: 일반 Aurora 인스턴스에 비해 I/O-Optimized 인스턴스의 시간당 비용이 높습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/5f864/image-2.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 69.41176470588235%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB00lEQVR42q1U2XLiQAz0//9dCCHhNjY+4gNf+LbpqAV4veRlH3aqVINaZ2tkjCiK4Hkebrcb/scxoviC9XqDo3mCZZ9hmhZc10PTdpMTi83lFfsrYT8MaNsWddOgqmsV/h4E/9czT2owME0zxJdE70Qky3P0XadJ8+KKJEkRC5MwjpGLjXiSphrDexhG9EOvuNFJ4Hq7w+J9hY/VF94WS71r6XQcB+wPJhbLFVZfG7y9f8DzAwz9IPoaS/H7XG9hniwURXFP2Pe9BjcPymVZ4XotdQzE6rpRe1URv06+J8vGZrvH2XFRCF6WJZjLGMdRaBTIslypMYgzIU6h47P6HL8kicRkv3CD/IMgFCo+HKkWhtHkwDuRQGKtvPo8MAgCmXk66VPCsiplZUxsd3vs9gd9kKfk0pl9PsscDzr8uY2+XLX0oafSLdnoDL+lmivL7fvf2kknGIUrxT11ZC+5StSfNtfzJS6c9Ke/zjCUr4UU4svlTush3C7OisUYQP1p86Q4RzHO/ClCucLheNT2P2UVzo4jr1YoBVKmTjuLUb/Ty3VMlm2r30RZcs0o+9JpjLZ7pRyrfU6Nwkcks1+U/7xkqGvzergatL8e/qnwy3r9c/gBZPQ3nE0JRt0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/ca1dc/image-2.png&apos; srcset=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/e7570/image-2.png 170w,
+/static/6b240d96e462a55e12dff2eb3f5b926f/f46e7/image-2.png 340w,
+/static/6b240d96e462a55e12dff2eb3f5b926f/ca1dc/image-2.png 680w,
+/static/6b240d96e462a55e12dff2eb3f5b926f/02d09/image-2.png 1020w,
+/static/6b240d96e462a55e12dff2eb3f5b926f/5f864/image-2.png 1066w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;스토리지 비용: 스토리지 사용에 대한 요금도 증가합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/2637b/image-1.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 35.29411764705882%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA6ElEQVR42p1Ra2/EIAzj///KllG6a3UdjwJ9ezhSt5Mm3YchWUAcEyeocRxhbY9cClLKKEvBdV14t97xKoSIxzDg+Zzw+RgwTV84zxP/XYriZVkErMx7qW5zzpjnGcdx/HF38yklydm2/fdBklp/oOusiPd9ryOwcm+1FuFd6N67ytu+hzEd2lYjxvhTTG3bVtucpGU+RkEIAd57OOdlf50Zz8454ajj+XVEig6aphFyXVdpg5X5UcYYcUPE2hp5dkT3fXXIXIIxgoYUk+iIAbrlLL0PMhuC7dAFeeYSjMU4Sz7BGHUc2Tf1wx/o3GrS0gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/ca1dc/image-1.png&apos; srcset=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/e7570/image-1.png 170w,
+/static/8d52c27eb7375e596f3436d917f9cb3b/f46e7/image-1.png 340w,
+/static/8d52c27eb7375e596f3436d917f9cb3b/ca1dc/image-1.png 680w,
+/static/8d52c27eb7375e596f3436d917f9cb3b/02d09/image-1.png 1020w,
+/static/8d52c27eb7375e596f3436d917f9cb3b/2637b/image-1.png 1356w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;비용 증가에도 불구하고 사용하시는 워크로드에서 읽기 및 쓰기 I/O 비용이 전체 비용 중 25% 이상이라면 I/O-Optimized를 선택하는 것은 합리적이라고 생각됩니다.&lt;/p&gt;
+&lt;h2&gt;RI까지 묻는다면?&lt;/h2&gt;
+&lt;p&gt;RI는 Reserved Instance이며, 계약 기간 내 할인된 시간당 요금을 구매하여 사용하는 AWS 구매옵션 중 하나 입니다. 이러한 RI는 RDS에서 &lt;strong&gt;InstanceUsage(인스턴스 비용)비용&lt;/strong&gt;에만 적용됩니다.&lt;/p&gt;
+&lt;p&gt;위의 정보를 기반으로, I/O-Optimized 역시 RI에 적용됩니다.
+해당 사용량에 대한 옵션 간 요금 차이가 자동으로 계산됩니다. Aurora I/O-Optimized를 이용하여 RI 할인 혜택을 최대한 활용하려면 인스턴스 비용이 기존 RI와 유사한 RI를 30% 추가로 구매하면 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/4585a/image-3.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 66.47058823529413%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB6klEQVR42mWTiXLqMAxF+f8vK1AK7WMtTYAkUJKShexku89XHWfSVjOeRLZ1fCXLo+h+x2a7RZIkOJ8vWLy+4WRZaNsGlmWL7ziO8lvYtoPlcoXlao3L5YI4TrBeb7BSY7vdoSgKjJI0xe3mo2kaHA5HTCZTGOZB+TVM9Z0+z3A8nmR9v//AZPqMlQKGYajibpi9zDGfL3A6WSjKEqO6rqGHZdt4f9+jqioBGKaJ+eIVu90Od5WJ45zx9m+JzWaLLMtkjorXyv+8XlGrmB6oFRBA6ZyLokiV4Qxbpf54PGAYJsbjiRzMzAicTmd4ehrjwzCEMWLw19dNHAZx8J81y/IcbdeCxjnupfqu62SOKlMFrutG1gWY54UUu1T5E0YQAzii6C6b+c95AvUaLVcHEkjjnACzLIfren2ABrZqMCWmriFJkva+BvJQDWSsKOQNVVUtKfAUHXDzfQnSAazpEJhKHeOfQCr8BlbSi0NFQRBIKYZAHjxU6Hlev1+AaZr1wHsc/wD6SiHLoC0Iwv4AfSlX9xewLB/SwJTOVzMMYG11SjSq0SWgsXXcv8BS+oqpx0rhEMiXoG+RFoaRdII21p9AbX0NDeNboe8HAm7bTsbn1ZVbZMnoe6pfs7zo1/mWHfX+m5Yt08pL+Q/NWuUfJz+lOgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/ca1dc/image-3.png&apos; srcset=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/e7570/image-3.png 170w,
+/static/8755316cca716c8c57eacf8a21a0e3ef/f46e7/image-3.png 340w,
+/static/8755316cca716c8c57eacf8a21a0e3ef/ca1dc/image-3.png 680w,
+/static/8755316cca716c8c57eacf8a21a0e3ef/02d09/image-3.png 1020w,
+/static/8755316cca716c8c57eacf8a21a0e3ef/9d567/image-3.png 1360w,
+/static/8755316cca716c8c57eacf8a21a0e3ef/4585a/image-3.png 1482w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+  &lt;/figure&gt;
+실제로 Nomalized Factor(크기유연성)값도 30%로 증가된 모습입니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithReservedDBInstances.html&quot;&gt;RDS RI 요금제&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;RI + I/O Optimized 어떻게 계산될까?&lt;/h2&gt;
+&lt;p&gt;구매한 RI (1년, 후불, 서울리전, Aurora Mysql, db.rg6.xlarge, 크기유연성(NF) 8) x 1&lt;/p&gt;
+&lt;p&gt;4월 기준으로 15일은 Standard를 사용했으며 남은 15일은 I/O Optimized로 db.rg6.xlarge 1대 인스턴스를 사용했다고 가정해봅시다.&lt;/p&gt;
+&lt;p&gt;(인스턴스 비용만 비교해보겠습니다.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;구매한 RI의 시간당 요금은 USD 0.412, NF 8&lt;/li&gt;
+&lt;li&gt;Standard 시간당 요금은 USD 0.627, NF 8&lt;/li&gt;
+&lt;li&gt;I/O Optimized 시간당 요금은 USD 0.815, NF 10.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;계산 방법&lt;/h3&gt;
+&lt;p&gt;AWS에서 제공하는 예약 인스턴스(RI) 크기 유연성을 이용하여 비용 계산을 할 때는 &apos;정규화 계수(Normalization Factor, NF)&apos;를 사용합니다. 이는 다양한 인스턴스 크기 간의 계산을 표준화하여, 사용자가 다른 크기의 인스턴스를 유연하게 사용할 수 있도록 하는데 목적이 있습니다. 즉, 구매한 RI가 특정 인스턴스 크기에만 국한되지 않고, 같은 인스턴스 패밀리 내에서 다양한 크기의 인스턴스에 적용될 수 있게 합니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;각 요금제별 사용 시간 계산
+한 달(30일)의 총 시간: 720시간 (30일 × 24시간)
+각 요금제별 사용 시간: 360시간 (15일 × 24시간)&lt;/li&gt;
+&lt;li&gt;NF 당 단가 계산
+db.rg6.xlarge 는 NF(Nomalized Factor)가 &apos;8&apos;입니다.
+NF가 8일 때, RI 요금은 0.412이니, 1NF 당 0.412/8 = USD 0.0515 입니다.&lt;/li&gt;
+&lt;li&gt;각 요금제별 비용 계산&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Standard&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RI 적용 비용 = 360시간(15일) × USD 0.0515 x 8(NF) = USD 148.32&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I/O Optimized&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;해당 요금의 NF 값은 10.3이므로, RI 1대가 NF 8만큼 커버가 가능한 상태이다. 그래서 10.3 - 8 에 대한 비용은 온디맨드로 과금됩니다.&lt;/li&gt;
+&lt;li&gt;I/O Optimized RI 적용 비용 = 360시간(15일) × USD 0.0515 x 8(NF) = 148.32 USD&lt;/li&gt;
+&lt;li&gt;온디맨드 금액 = 360시간 × USD 0.0791 × (10.3 - 8) = USD 65.74&lt;/li&gt;
+&lt;li&gt;I/O Optimized 총 비용 = USD 148.32 (RI 부분) + USD 65.74 (온디맨드 부분) = USD 214.06&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;총 인스턴스 비용
+한달 내내 Standard 만 사용한 경우 : USD 296.64
+한달 내내 I/O Optimized 만 사용한 경우 : USD 428.11
+15일씩 반반 나눠 쓴 경우 : USD 362.38&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I/O Optimized는 비록 기본 인스턴스 비용은 더 높지만, 특히 I/O 작업이 높은 워크로드에서는 I/O 비용을 과금하지 않기 때문에, 훨씬 경제적인 선택이 될 수 있습니다.&lt;/p&gt;
+&lt;h2&gt;정리&lt;/h2&gt;
+&lt;p&gt;Aurora I/O-Optimized 요금제는 데이터베이스 작업 중 특히 읽기 및 쓰기 I/O 작업이 많은 환경에서 비용 효율을 극대화할 수 있는 좋은 선택지가 될 수 있습니다. 하지만, 이러한 요금제는 기본 인스턴스 비용과 스토리지 비용이 증가한다는 점을 명심해야 합니다.&lt;/p&gt;
+&lt;p&gt;또한, RI를 활용하여 추가적인 비용 절감을 기대할 수 있지만, 이는 사용 패턴과 필요에 따라 철저한 계획과 계산이 필요합니다. RI의 크기 유연성을 활용해 보다 효율적으로 인스턴스를 관리할 수 있으나, I/O Optimized의 경우 NF 값의 변동으로 인한 온디맨드 비용 발생 가능성도 고려해야 합니다.&lt;/p&gt;
+&lt;p&gt;AWS를 이용하시는 모든 분들이 이 글을 통해 좀 더 효율적인 비용 관리 방안을 모색할 수 있기를 바랍니다. 다음 포스팅에서는 또 다른 AWS 서비스의 비용 최적화 전략에 대해 알아보겠습니다. 감사합니다.🚀&lt;/p&gt;
+&lt;p&gt;참고&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/blogs/aws/new-amazon-aurora-i-o-optimized-cluster-configuration-with-up-to-40-cost-savings-for-i-o-intensive-applications/&quot;&gt;https://aws.amazon.com/ko/blogs/aws/new-amazon-aurora-i-o-optimized-cluster-configuration-with-up-to-40-cost-savings-for-i-o-intensive-applications/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithReservedDBInstances.html&quot;&gt;https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithReservedDBInstances.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/rds/aurora/pricing/?pg=pr&amp;#x26;loc=1&amp;#x26;refid=a8696c8d-956e-47f7-b668-0ae055f6d1ea&quot;&gt;https://aws.amazon.com/ko/rds/aurora/pricing/?pg=pr&amp;#x26;loc=1&amp;#x26;refid=a8696c8d-956e-47f7-b668-0ae055f6d1ea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/ko/rds/aurora/faqs/&quot;&gt;https://aws.amazon.com/ko/rds/aurora/faqs/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[AWS] Public IP 과금 소식]]></title><description><![CDATA[안녕하세요!👋🏻 지금까지 AWS의 EC2에 Attach되어 있는 IP 주소에 대해서는 과금하지 않았는데, 2024년 2월 1일부터 AWS Public IPv4 주소 사용이 시간당 0.005 USD 과금됩니다. 또한, 신규 AWS…]]></description><link>https://tech.erasegod.com/cost2/</link><guid isPermaLink="false">https://tech.erasegod.com/cost2/</guid><pubDate>Tue, 13 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
 &lt;p&gt;지금까지 AWS의 EC2에 Attach되어 있는 IP 주소에 대해서는 과금하지 않았는데, &lt;strong&gt;2024년 2월 1일&lt;/strong&gt;부터 AWS Public IPv4 주소 사용이 시간당 0.005 USD 과금됩니다.&lt;/p&gt;
 &lt;p&gt;또한, 신규 AWS 프리티어 고객인 경우 매달 750시간의 Public IP 주소를 무료로 사용할 수 있습니다. AWS는 Public IP Insights라는 새로운 기능을 통해 고객이 자신의 Public IPv4 주소 사용 현황을 모니터링하고 최적화할 수 있도록 지원합니다. 이를 통해 불필요한 비용을 줄이고 IPv4 주소 사용을 효율적으로 관리할 수 있습니다.&lt;/p&gt;
 &lt;h2&gt;Public IPv4 주소의 유형&lt;/h2&gt;
