@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Apr 2024 12:20:14 GMT</lastBuildDate><item><title><![CDATA[[AWS] RDS Aurora I/O-Optimized]]></title><description><![CDATA[안녕하세요!👋🏻 AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 'Aurora I/O-Optimized'를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized…]]></description><link>https://tech.erasegod.com/cost3/</link><guid isPermaLink="false">https://tech.erasegod.com/cost3/</guid><pubDate>Sun, 14 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Shin, Jiwoo]]></title><description><![CDATA[다양한 관점에서 문제를 해결하길 좋아합니다.]]></description><link>https://tech.erasegod.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Apr 2024 14:36:21 GMT</lastBuildDate><item><title><![CDATA[[AWS] RDS Aurora I/O-Optimized]]></title><description><![CDATA[안녕하세요!👋🏻 AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 'Aurora I/O-Optimized'를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized…]]></description><link>https://tech.erasegod.com/cost3/</link><guid isPermaLink="false">https://tech.erasegod.com/cost3/</guid><pubDate>Sun, 14 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요!👋🏻&lt;/p&gt;
 &lt;p&gt;AWS에서 제공하는 다양한 서비스 중에서 특히 데이터베이스를 운영할 때 비용 효율성을 높이기 위한 방법 중 하나가 &apos;&lt;a href=&quot;https://aws.amazon.com/ko/about-aws/whats-new/2023/05/amazon-aurora-i-o-optimized/&quot;&gt;Aurora I/O-Optimized&lt;/a&gt;&apos;를 적용하는 것입니다. 이 글을 통해 Aurora I/O-Optimized의 개념을 소개하고, 어떻게 비용 효율을 높일 수 있는지 살펴보겠습니다.&lt;/p&gt;
 &lt;h2&gt;I/O-Optimized 요금제 소개&lt;/h2&gt;
 &lt;p&gt;I/O-Optimized 요금제는 Amazon Aurora 서비스의 한 형태로, 데이터베이스의 입출력(IO) 작업에 최적화되어 비용 효율을 높이는 요금 체계입니다. 이 요금제는 &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt; 집약적인 작업을 자주 수행하는 데이터베이스에 적합하며, &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt;지출이 총 Aurora 데이터베이스 지출의 25%를 초과하는 경우 Aurora I/O-Optimized를 이용하면 &lt;strong&gt;읽기 및 쓰기 I/O&lt;/strong&gt; 집약적 워크로드의 비용을 최대 40% 절감할 수 있습니다.&lt;/p&gt;
@@ -7,13 +7,13 @@
     &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
       &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/ec645/image.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
     &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 48.23529411764706%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYklEQVR42lVRiW6DMAzl//+tGu20VutaoJQzBwnkIIQEZsIqrU9Ptjnes51E/AXGGA3o+wEolDZvmAIgmTFAShnFx9PhEH98HI+nT4hxfLr+3L6vt6xCtANDRmjXbQUnBJyh4mBgrVVKRUppISVEF+C9n3dAC7MzpC3vLY21L3Hboqqqm6YFY3i5jWatCREcgpObZj/O3vll3bFsBdhEMFJZ1UGOYIKdMMswCDqIpKFZS+6YnyvSitEsq3Kr9hC90mPklwX2eDzyoqxAsMv6XsAMvbEJG695fUmfl+SZ1qSgAphjjpQVWkcwAPx9T7NnUbYII0IRJi0isKKYrHRrWuNz8rxkxTnJT9fk6/bIEaej+xNrrTcZhq07jAmQ8R4ObzCW2fVe4UtWpg1NagLNoai5asS4iWfn5nDK7g3bo5wsmzySBomRW8+A08bOzN00S6Wj132E6zdv3GEDwufpP5TSv/HUNjz510FnAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/ca1dc/image.png&apos; srcset=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/e7570/image.png 170w,
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;Cluster 모드&apos; title=&apos;&apos; src=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/ca1dc/image.png&apos; srcset=&apos;/static/eea0a9d904c650cfc9a2adf10710ed0e/e7570/image.png 170w,
 /static/eea0a9d904c650cfc9a2adf10710ed0e/f46e7/image.png 340w,
 /static/eea0a9d904c650cfc9a2adf10710ed0e/ca1dc/image.png 680w,
 /static/eea0a9d904c650cfc9a2adf10710ed0e/ec645/image.png 933w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;Cluster 모드&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/ko/rds/aurora/pricing/&quot;&gt;RDS Aurora 요금제&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;제약사항&lt;/h2&gt;
@@ -31,14 +31,14 @@
     &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
       &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/5f864/image-2.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
     &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 69.41176470588235%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB00lEQVR42q1U2XLiQAz0//9dCCHhNjY+4gNf+LbpqAV4veRlH3aqVINaZ2tkjCiK4Hkebrcb/scxoviC9XqDo3mCZZ9hmhZc10PTdpMTi83lFfsrYT8MaNsWddOgqmsV/h4E/9czT2owME0zxJdE70Qky3P0XadJ8+KKJEkRC5MwjpGLjXiSphrDexhG9EOvuNFJ4Hq7w+J9hY/VF94WS71r6XQcB+wPJhbLFVZfG7y9f8DzAwz9IPoaS/H7XG9hniwURXFP2Pe9BjcPymVZ4XotdQzE6rpRe1URv06+J8vGZrvH2XFRCF6WJZjLGMdRaBTIslypMYgzIU6h47P6HL8kicRkv3CD/IMgFCo+HKkWhtHkwDuRQGKtvPo8MAgCmXk66VPCsiplZUxsd3vs9gd9kKfk0pl9PsscDzr8uY2+XLX0oafSLdnoDL+lmivL7fvf2kknGIUrxT11ZC+5StSfNtfzJS6c9Ke/zjCUr4UU4svlTush3C7OisUYQP1p86Q4RzHO/ClCucLheNT2P2UVzo4jr1YoBVKmTjuLUb/Ty3VMlm2r30RZcs0o+9JpjLZ7pRyrfU6Nwkcks1+U/7xkqGvzergatL8e/qnwy3r9c/gBZPQ3nE0JRt0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/ca1dc/image-2.png&apos; srcset=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/e7570/image-2.png 170w,
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;RDS 인스턴스 비용&apos; title=&apos;&apos; src=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/ca1dc/image-2.png&apos; srcset=&apos;/static/6b240d96e462a55e12dff2eb3f5b926f/e7570/image-2.png 170w,
 /static/6b240d96e462a55e12dff2eb3f5b926f/f46e7/image-2.png 340w,
 /static/6b240d96e462a55e12dff2eb3f5b926f/ca1dc/image-2.png 680w,
 /static/6b240d96e462a55e12dff2eb3f5b926f/02d09/image-2.png 1020w,
 /static/6b240d96e462a55e12dff2eb3f5b926f/5f864/image-2.png 1066w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;RDS 인스턴스 비용&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;스토리지 비용: 스토리지 사용에 대한 요금도 증가합니다.&lt;/li&gt;
@@ -47,14 +47,14 @@
     &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
       &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/2637b/image-1.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
     &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 35.29411764705882%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA6ElEQVR42p1Ra2/EIAzj///KllG6a3UdjwJ9ezhSt5Mm3YchWUAcEyeocRxhbY9cClLKKEvBdV14t97xKoSIxzDg+Zzw+RgwTV84zxP/XYriZVkErMx7qW5zzpjnGcdx/HF38yklydm2/fdBklp/oOusiPd9ryOwcm+1FuFd6N67ytu+hzEd2lYjxvhTTG3bVtucpGU+RkEIAd57OOdlf50Zz8454ajj+XVEig6aphFyXVdpg5X5UcYYcUPE2hp5dkT3fXXIXIIxgoYUk+iIAbrlLL0PMhuC7dAFeeYSjMU4Sz7BGHUc2Tf1wx/o3GrS0gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/ca1dc/image-1.png&apos; srcset=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/e7570/image-1.png 170w,
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;RDS 스토리지 비용&apos; title=&apos;&apos; src=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/ca1dc/image-1.png&apos; srcset=&apos;/static/8d52c27eb7375e596f3436d917f9cb3b/e7570/image-1.png 170w,
 /static/8d52c27eb7375e596f3436d917f9cb3b/f46e7/image-1.png 340w,
 /static/8d52c27eb7375e596f3436d917f9cb3b/ca1dc/image-1.png 680w,
 /static/8d52c27eb7375e596f3436d917f9cb3b/02d09/image-1.png 1020w,
 /static/8d52c27eb7375e596f3436d917f9cb3b/2637b/image-1.png 1356w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;RDS 스토리지 비용&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;비용 증가에도 불구하고 사용하시는 워크로드에서 읽기 및 쓰기 I/O 비용이 전체 비용 중 25% 이상이라면 I/O-Optimized를 선택하는 것은 합리적이라고 생각됩니다.&lt;/p&gt;
 &lt;h2&gt;RI까지 묻는다면?&lt;/h2&gt;
@@ -65,7 +65,7 @@
     &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
       &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/4585a/image-3.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
     &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 66.47058823529413%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB6klEQVR42mWTiXLqMAxF+f8vK1AK7WMtTYAkUJKShexku89XHWfSVjOeRLZ1fCXLo+h+x2a7RZIkOJ8vWLy+4WRZaNsGlmWL7ziO8lvYtoPlcoXlao3L5YI4TrBeb7BSY7vdoSgKjJI0xe3mo2kaHA5HTCZTGOZB+TVM9Z0+z3A8nmR9v//AZPqMlQKGYajibpi9zDGfL3A6WSjKEqO6rqGHZdt4f9+jqioBGKaJ+eIVu90Od5WJ45zx9m+JzWaLLMtkjorXyv+8XlGrmB6oFRBA6ZyLokiV4Qxbpf54PGAYJsbjiRzMzAicTmd4ehrjwzCEMWLw19dNHAZx8J81y/IcbdeCxjnupfqu62SOKlMFrutG1gWY54UUu1T5E0YQAzii6C6b+c95AvUaLVcHEkjjnACzLIfren2ABrZqMCWmriFJkva+BvJQDWSsKOQNVVUtKfAUHXDzfQnSAazpEJhKHeOfQCr8BlbSi0NFQRBIKYZAHjxU6Hlev1+AaZr1wHsc/wD6SiHLoC0Iwv4AfSlX9xewLB/SwJTOVzMMYG11SjSq0SWgsXXcv8BS+oqpx0rhEMiXoG+RFoaRdII21p9AbX0NDeNboe8HAm7bTsbn1ZVbZMnoe6pfs7zo1/mWHfX+m5Yt08pL+Q/NWuUfJz+lOgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;alt text&apos; title=&apos;&apos; src=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/ca1dc/image-3.png&apos; srcset=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/e7570/image-3.png 170w,
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;크기 유연성&apos; title=&apos;&apos; src=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/ca1dc/image-3.png&apos; srcset=&apos;/static/8755316cca716c8c57eacf8a21a0e3ef/e7570/image-3.png 170w,
 /static/8755316cca716c8c57eacf8a21a0e3ef/f46e7/image-3.png 340w,
 /static/8755316cca716c8c57eacf8a21a0e3ef/ca1dc/image-3.png 680w,
 /static/8755316cca716c8c57eacf8a21a0e3ef/02d09/image-3.png 1020w,
@@ -73,10 +73,26 @@
 /static/8755316cca716c8c57eacf8a21a0e3ef/4585a/image-3.png 1482w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;alt text&lt;/figcaption&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;크기 유연성&lt;/figcaption&gt;
   &lt;/figure&gt;
 실제로 Nomalized Factor(크기유연성)값도 30%로 증가된 모습입니다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithReservedDBInstances.html&quot;&gt;RDS RI 요금제&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;RI 적용 우선순위&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;결론은 I/O Optimized 가 먼저 적용됩니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;만약 RDS 일반 모드와 I/O Optimized 모드 둘 다 동시에 사용 중이고, 모두 RI를 적용받을 수 있는 상황이라면 적용 우선순위가 어떤지 궁금하여 AWS Case Open 해보았습니다.&lt;/p&gt;
+&lt;h3&gt;AWS Case 답변&lt;/h3&gt;
+&lt;p&gt;Amazon RDS Reserved Instances(RI)는 사용 유형에 따라 다른 방식으로 적용됩니다. 일반적으로 다음과 같은 순서로 적용됩니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;InstanceUsageIOOptimized&lt;/strong&gt;: 이 사용 유형은 프로비저닝된 IOPS(PIOPS) SSD 스토리지를 사용하는 IO 최적화된 인스턴스에 대해 적용됩니다. 이 유형의 RI가 우선 적용됩니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;InstanceUsage&lt;/strong&gt;: 이 사용 유형은 일반 인스턴스 사용량에 대해 적용됩니다. 여기에는 IO 최적화되지 않은 인스턴스와 마그네틱 또는 범용 SSD 스토리지가 포함됩니다. InstanceUsageIOOptimized RI가 없거나 이미 적용된 경우, InstanceUsage RI가 남은 사용량에 적용됩니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;따라서 RI 적용 순서는 다음과 같습니다:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;InstanceUsageIOOptimized RI&lt;/li&gt;
+&lt;li&gt;InstanceUsage RI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이 순서는 AWS가 청구 할인을 최대화하는 방식으로 설계되었습니다. IO 최적화된 인스턴스는 일반적으로 더 비싸므로, 해당 RI 할인이 먼저 적용되어 더 큰 절감 효과를 얻을 수 있습니다.
+또한, AWS는 동일한 사용 유형 내에서 가장 높은 가치의 RI를 먼저 적용하여 할인을 최적화합니다&lt;/p&gt;
 &lt;h2&gt;RI + I/O Optimized 어떻게 계산될까?&lt;/h2&gt;
 &lt;p&gt;구매한 RI (1년, 후불, 서울리전, Aurora Mysql, db.rg6.xlarge, 크기유연성(NF) 8) x 1&lt;/p&gt;
 &lt;p&gt;4월 기준으로 15일은 Standard를 사용했으며 남은 15일은 I/O Optimized로 db.rg6.xlarge 1대 인스턴스를 사용했다고 가정해봅시다.&lt;/p&gt;
